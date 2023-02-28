@@ -119,29 +119,32 @@ function App() {
           resources={[
             {
               name: "properties",
-              list: MuiInferencer,
+              list: AllProperties,
+              show: PropertyDetails,
+              create: CreateProperty,
+              edit: EditProperty,
               icon: <VillaOutlined />,
             },
             {
-              name: "agent",
-              list: MuiInferencer,
+              name: "agents",
+              list: Agents,
+              show: AgentProfile,
               icon: <PeopleAltOutlined />,
-
             },
             {
-              name: "reviwe",
-              list: MuiInferencer,
+              name: "reviwes",
+              list: Home,
               icon: <StarOutlineRounded />,
             },
             {
-              name: "message",
-              list: MuiInferencer,
+              name: "messages",
+              list: Home,
               icon: <ChatBubbleOutline />,
             },
             {
               name: "my-profile",
               options: { label: "My Profile" },
-              list: MuiInferencer,
+              list: MyProfile,
               icon: <AccountCircleOutlined />,
             },
           ]}
