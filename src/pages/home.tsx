@@ -19,7 +19,7 @@ function home() {
                     title="Properties for Sale"
                     value={684}
                     series={[75, 25]}
-                    colors={["#275be8", "#c4e8ef"]}
+                    colors={["#00AEEF", "#c4e8ef"]}
                 />
                 <PieChart
                     title="Properties for Rent"
@@ -31,7 +31,7 @@ function home() {
                     title="Total customers"
                     value={5684}
                     series={[75, 25]}
-                    colors={["#275be8", "#c4e8ef"]}
+                    colors={["#9063cd", "#c4e8ef"]}
                 />
                 <PieChart
                     title="Properties for Cities"
@@ -40,6 +40,15 @@ function home() {
                     colors={["#275be8", "#c4e8ef"]}
                 />
             </Box>
+            <Stack
+                mt="25px"
+                width="100%"
+                direction={{ xs: "column", lg: "row" }}
+                gap={4}
+            >
+                <TotalRevenue />
+                <PropertyReferrals />
+            </Stack>
            
 
     </Box>
